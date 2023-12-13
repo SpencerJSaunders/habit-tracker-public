@@ -1,0 +1,27 @@
+.user-portal {
+  h2 {
+    text-align: center;
+  }
+  &__profile-information {
+    padding: 1rem 2rem;
+    text-align: center;
+
+    img {
+      border-radius: 50px;
+      border: 1px solid lightgrey;
+      margin: 1rem auto;
+    }
+  }
+
+  &__manage-habits {
+    padding: 1rem 2rem;
+  }
+
+  &__habit-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid lightgrey;
+  }
+}

@@ -1,0 +1,14 @@
+.modal-content-container {
+  display: relative;
+  text-align: center;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  &__close-icon {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+}

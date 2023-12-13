@@ -1,0 +1,57 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.homepage {
+  &__welcome-section {
+    animation: fadeIn 2s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    @media (min-width: 900px) {
+      padding-top: 5rem;
+    }
+  }
+
+  &__desktop-image {
+    margin: 0 auto;
+    max-width: 25rem;
+
+    @media (min-width: 900px) {
+      max-width: 40rem;
+    }
+  }
+
+  &__welcome-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+
+    @media (min-width: 1200px) {
+      font-size: 3.5rem;
+    }
+  }
+
+
+  &__welcome-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    @media (min-width: 1200px) {
+      font-size: 2.5rem;
+    }
+    @media (min-width: 900px) {
+      font-size: 2rem;
+    }
+  }
+}

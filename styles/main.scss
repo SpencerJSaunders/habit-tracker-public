@@ -1,0 +1,127 @@
+h1 {
+  color: black;
+  margin-bottom: 1.5rem;
+  text-align: center;
+
+  @media (min-width: 900px) {
+    text-align: left;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@mixin habit-content-section {
+  position: relative;
+  padding: 2rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 1px solid lightgrey;
+}
+
+.alert {
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    width: 60%;
+  }
+}
+
+.habit-statistic {
+  text-align: center;
+  padding: 1rem 2rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.user-habit {
+  text-align: center;
+  &__image {
+    height: 12rem;
+    border: 1px solid lightgrey;
+    border-bottom: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  &__content-section {
+    @include habit-content-section;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+
+  &__completion-statistic {
+    margin-bottom: 1rem;
+    &--achieved {
+      color: rgb(17, 179, 17);
+      font-weight: bold;
+    }
+  }
+
+  &__icons {
+    position: absolute;
+    top: 5%;
+    right: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.individual-habit-details {
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.list-of-habits {
+  padding-bottom: 3rem;
+}
+
+.loading-spinner {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.access-denied {
+  text-align: center;
+  @media (min-width: 900px) {
+    text-align: left;
+  }
+}
+
+.breadcrumbs {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
